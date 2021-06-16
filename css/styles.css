@@ -6,6 +6,10 @@
     color: #003cc6;
 }
 
+.row {
+  --bs-gutter-x: 0;
+}
+
 .logo,
 .navbar-brand,
 .about {
