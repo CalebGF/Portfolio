@@ -1,119 +1,221 @@
-header {
-    padding: 1rem 2rem;
+.primary-blue {
+    color: #719cff;
 }
 
-header .row{
-    border-bottom: 1px solid #000;
-}
-
-.logo,
-nav a,
-.about{
-    font-family: 'Roboto', sans-serif;
-    color: #719CFF;
-}
-
-.logo {
-    font-size: 3rem
-}
-
-nav {
-    margin-top: 1rem;
-}
-
-nav a {
-    font-size: 1.2rem;
-    transition: color 0.5s ease;
-}
-nav a:hover {
+.strong-blue {
     color: #003cc6;
 }
 
-
+.logo,
+.navbar-brand,
 .about {
-    padding-top: 2rem;
-    height: 600px;
+  font-family: "Roboto", sans-serif;
 }
 
-.about .row .col-6 {
-    text-align: right;
+.weight-100{
+  font-weight: 100;
 }
 
-.about-text h1 {
-    font-size: 4rem;
+/* Nav  */
+.navbar-toggler {
+    border: 1px solid #719cff;
+}
+
+.nav-link {
+  color: #719cff;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+.container-fluid {
+  border-bottom: 1px solid #000;
+  margin: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    box-shadow: none;
+    border: 1px solid #000;
+}
+
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-link {
+  padding-bottom: 0;
+}
+
+
+section {
+  padding: 3rem 2rem;
+}
+
+/* About */
+
+h1 {
+  font-size: 2.2rem;
 }
 
 .about-text {
-    padding-left: 50px !important;
-    padding-top: 250px;
-    font-size: 1.8rem;
+  text-align: center;
+}
+
+.img-wraper {
+  text-align: center;
 }
 
 .about-img {
-    max-width: 400px;
-    margin-right: 2rem;
-    border-radius: 20px;
-} 
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
 
 /* Projects */
 
 .projects {
-    background-color: #000;
-    padding: 0 2rem;
-    height: 600px;
+  background-color: #000;
+  padding: 0 2rem;
 }
 
 .projects h2 {
-    font-size: 2.3rem;
-    text-align: center;
-    padding: 3rem 0;
-    color: #719CFF;
-}
-.projects a:hover {
-    text-decoration: none;
-}
-
-.card {
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: box-shadow 0.3s ease;
-    width: 25rem;
-    margin: 0 auto;
-    color: #719CFF;
-}
-
-.card:hover {
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  font-size: 2.3rem;
+  text-align: center;
+  padding: 3rem 0;
 }
 
 .project-col {
-    text-align: center;
+  margin-bottom: 2rem;
 }
 
+.project-card {
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+.card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+  width: 20rem;
+  margin: 0 auto;
+  color: #719cff;
+}
+
+.card-body {
+  color: #000;
+}
+
+/* Footer */
+
 footer {
-    padding: 1rem 2rem;
-    background-color: #000;
-    border-top: 1px solid #fff;
+  background-color: #000;
+  border-top: 1px solid #fff;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 .footer-link {
-    margin-bottom: 0;
-}
-
-.footer-link:first-child {
-    margin-bottom: .5rem;
+  margin-bottom: 0;
 }
 
 .footer-link a{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer i {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px){
+  /* About */
+  h1 {
+    font-size: 3rem;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .about-text {
+    margin-top: 150px;
+  }
+
+  .about-text p{
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .nav-item {
+    font-weight: 400;
+    transition: color 0.5seg ease;
+  }
+
+  .about-img {
+    width: 350px;
+  }
+
+  /* Projects */
+  .project-col {
+    margin-bottom: 4rem;
+  }
+
+  .card:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  }
+
+  .card-body,
+  .card-description {
+    padding: 0.2rem 0.2rem 0.2rem 0.3rem;
+    text-align: left;
+    color: #000;
+  }
+
+  .card-description {
+    padding-left: 0;
+  }
+
+  .card-body p,
+  .card-body h5 {
+    margin-bottom: 0;
+  }
+
+  .project-col {
+    text-align: center;
+  }
+
+  footer {
+    padding: 1rem 2rem;
+    background-color: #000;
+    border-top: 1px solid #fff;
+  }
+
+  .footer-link {
+    margin-bottom: 0;
+  }
+
+  .footer-link:first-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-link a {
     color: #fff;
     transition: color 0.5s ease;
-}
+  }
 
-.footer-link a:hover {
+  .footer-link a:hover{
     text-decoration: none;
-    color: #719CFF;
-}
+    color: #719cff;
+  }
 
-.footer-link i {
+  .footer-link i {
     font-size: 1.3rem;
-    padding-right: .3rem;
+    padding-right: 0.3rem;
+  }
 }

@@ -6,53 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Caleb González Flores</title>
 </head>
 
 <body>
     <header>
-        <div class="row">
-            <div class="col-6">
-                <span class="logo">CGF</span>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand primary-blue weight-100" href="#">CGF</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars primary-blue"></i></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link nav-item" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-item" href="#footer">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-6">
-                <nav class="nav justify-content-end align-middle">
-                    <a href="" class="nav-link">About me</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </nav>
-            </div>
-        </div>
+          </nav>
     </header>
     <main>
         <section class="about">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="about-text">
-                        <h1>Caleb González Flores</h1>
-                        <p>Entusiasta programador y desarrollador web fullstack en progreso.</p>
+                        <h1 class="primary-blue weight-100">Caleb González Flores</h1>
+                        <p class="primary-blue">Enthusiastic programer and fullstack web developer in progress.</p>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 img-wraper">
                     <img class="about-img" src="images/Caleb-img.png" alt="Selfie picture of Caleb">
                 </div>
             </div>
         </section>
-        <section class="projects">
-            <h2>Projects</h2>
+        <section class="projects" id="projects">
+            <h2 class="primary-blue weight-100">Projects</h2>
             <div class="row">
-                <div class="col project-col">
+                <div class="col-lg-4 col-md-6 project-col">
                     <a href="https://calebgf.github.io/Ragnar-the-cat/" class="project-card">
                         <div class="card">
                             <img src="images/web-ejp-1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Web desinged for MigraCode application</p>
+                                <h5 class="card-title weight-100">Ragnar the Cat</h5>
+                                <div class="card-description">
+                                    <p class="weight-100">Web designed to apply in MigraCode BootCamp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 project-col">
+                    <a href="https://calebgf.github.io/Ragnar-the-cat/" class="project-card">
+                        <div class="card">
+                            <img src="images/web-ejp-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title weight-100">Ragnar the Cat</h5>
+                                <div class="card-description">
+                                    <p class="weight-100">Web designed to apply in MigraCode BootCamp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 project-col">
+                    <a href="https://calebgf.github.io/Ragnar-the-cat/" class="project-card">
+                        <div class="card">
+                            <img src="images/web-ejp-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title weight-100">Ragnar the Cat</h5>
+                                <div class="card-description">
+                                    <p class="weight-100">Web designed to apply in MigraCode BootCamp</p>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -60,27 +95,26 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p class="footer-link">
-            <a href="https://github.com/CalebGF" >
-                <i class="fab fa-github"></i> GitHub
-            </a>
-        </p>
-        <p class="footer-link">
-            <a href="https://www.linkedin.com/in/caleb-gonzalez-flores/" >
-                <i class="fab fa-linkedin"></i> Linkedin
-            </a>
-        </p>
+    <footer id="footer">
+        <div class="row">
+            <div class="col">
+                <p class="footer-link">
+                    <a href="https://github.com/CalebGF" class="weight-100">
+                        <i class="fab fa-github primary-blue"></i> GitHub
+                    </a>
+                </p>
+            </div>
+            <div class="col">
+                <p class="footer-link">
+                    <a href="https://www.linkedin.com/in/caleb-gonzalez-flores/" class="weight-100">
+                        <i class="fab fa-linkedin primary-blue"></i> Linkedin
+                    </a>
+                </p>
+            </div>
+        </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5214a55c82.js" crossorigin="anonymous"></script>
 </body>
